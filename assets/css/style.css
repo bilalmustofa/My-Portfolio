@@ -1,0 +1,47 @@
+/********* General CSS *********/
+/*******************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar-brand {
+  color: #0f172a;
+  font-size: 40px;
+}
+.nav-link {
+  color: #334155;
+  font-weight: bold;
+  position: relative;
+}
+/* Blue underline effect */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: #3b82f6;
+  transform: scaleX(0);        /* hidden */
+  transform-origin: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover / Active */
+.nav-link:hover::after,
+.nav-link.active::after {
+  transform: scaleX(1);        /* show */
+}
+/* Remove default toggle border */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
