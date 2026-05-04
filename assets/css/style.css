@@ -57,3 +57,16 @@ header {
 .navbar-toggler:focus {
   box-shadow: none;
 }
+/* Navbar initial state 
+    Animation nav bar    */
+.header {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: all 0.9s ease;
+}
+
+/* When page loads */
+.header.show {
+  transform: translateY(0);
+  opacity: 1;
+}
