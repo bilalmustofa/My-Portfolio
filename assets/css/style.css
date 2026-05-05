@@ -13,12 +13,10 @@ body {
 
 /*********** Nav Bar CSS **********/
 /**********************************/
-header {
-  background:rgb(6, 9, 26);
-}
 .navbar {
   padding: 0 10px;
   border-radius: 20px;
+  background-color: #0f172a;
   box-shadow:0 0 5px rgba(82, 152, 243, 0.6) ;
 }
 .navbar-brand {
@@ -69,4 +67,60 @@ header {
 .header.show {
   transform: translateY(0);
   opacity: 1;
+}
+
+/********* FOOTER PART ************/
+/**********************************/
+.footer {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Brand */
+.footer-brand {
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+/* Text */
+.footer-text {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+/* Titles */
+.footer-title {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Links */
+.footer-link {
+  color: #94a3b8;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 8px;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  color: #3b82f6;
+  transform: translateX(3px);
+}
+
+/* Bottom text */
+.footer-copy {
+  font-size: 14px;
+  color: #64748b;
+}
+.footer-icon {
+  color: #94a3b8;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.footer-icon:hover {
+  color: #3b82f6;
+  transform: translateY(-3px);
 }
