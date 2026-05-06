@@ -69,6 +69,37 @@ body {
   opacity: 1;
 }
 
+/********* HOME PAGE PART ************/
+/**********************************/
+.hero {
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.hero-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.hero-text {
+  color: #94a3b8;
+  max-width: 500px;
+}
+
+.hero-img {
+  max-width: 400px;
+  border-radius: 50%; /* optional circle image */
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
+}
+
+/* Typing text */
+#typing {
+  color: #3b82f6;
+  padding-right: 5px;
+  font-weight: bold;
+}
+
 /********* FOOTER PART ************/
 /**********************************/
 .footer {
