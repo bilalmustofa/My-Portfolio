@@ -24,6 +24,17 @@ body {
   font-size: 40px;
   transition: 0.3s;
 }
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar .logo-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding-right:10px ;
+}
 .navbar-brand:hover {
   color: #3b82f6;
 }
@@ -78,18 +89,13 @@ body {
 }
 
 .hero-title {
-  font-size: 48px;
-  font-weight: 700;
-}
-
-.hero-text {
-  color: #94a3b8;
-  max-width: 500px;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 .hero-img {
   max-width: 400px;
-  border-radius: 50%; /* optional circle image */
+  border-radius: 50%; /*circle image */
   box-shadow: 0 0 25px rgba(59, 130, 246, 0.4);
 }
 
