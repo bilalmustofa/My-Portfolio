@@ -2,6 +2,7 @@
 window.addEventListener('load', () => {
     document.querySelector('.header').classList.add('show');
   });
+
   // Letter Typing Animation
   const selectTyped = document.querySelector('.typed');
   if (selectTyped) {
@@ -15,3 +16,8 @@ window.addEventListener('load', () => {
       backDelay: 2000
     });
   }
+
+// Home Page Animation
+  window.addEventListener('load', () => {
+    document.querySelector('.hero-content').classList.add('show');
+  });
