@@ -66,12 +66,12 @@ body {
 .navbar-toggler:focus {
   box-shadow: none;
 }
-/* Navbar initial state 
-    Animation nav bar    */
+/* Navbar Animation  */
+ /* initial state  */
 .header {
   transform: translateY(-100%);
   opacity: 0;
-  transition: all 0.9s ease;
+  transition: all 2s ease;
 }
 
 /* When page loads */
@@ -104,6 +104,37 @@ body {
   color: #3b82f6;
   padding-right: 5px;
   font-weight: bold;
+}
+
+/* Home Animation  */
+/* Initial state */
+.hero-content {
+  opacity: 0;
+  transform: translateY(-80px);
+  transition: all 2s ease;
+}
+
+/* Active state */
+.hero-content.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.hero-img {
+  animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /********* FOOTER PART ************/
