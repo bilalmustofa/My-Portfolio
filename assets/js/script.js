@@ -20,4 +20,5 @@ window.addEventListener('load', () => {
 // Home Page Animation
   window.addEventListener('load', () => {
     document.querySelector('.hero-content').classList.add('show');
+    document.querySelector('.hero-image-wrapper').classList.add('show');
   });
