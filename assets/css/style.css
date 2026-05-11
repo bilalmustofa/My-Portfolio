@@ -152,6 +152,33 @@ body {
     transform: translateY(0);
   }
 }
+/* home social media icon */
+.hero-social {
+  margin: 10px 0;
+}
+
+.hero-social a {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #3b82f6;
+  border-radius: 50%;
+  color: #3b82f6;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 15px;
+  transition: all 0.3s ease;
+}
+
+/* Hover */
+.hero-social a:hover {
+  background: #3b82f6;
+  color: #0f172a;
+  box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  transform: translateY(-5px);
+}
 
 /* Home button */
 .contact-btn {
