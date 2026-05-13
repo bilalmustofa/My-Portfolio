@@ -93,6 +93,9 @@ body {
 }
 
 .hero-title {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-size: clamp(40px, 10vw, 80px);
   font-weight: bold;
   line-height: 1.1;
@@ -223,12 +226,11 @@ body {
   }
 
   .hero-img {
-    margin-top: 30px;
-    max-width: 300px;
+    display: none;
   }
 
 }
-/********* HOME PAGE PART END************/
+/********* HOME PAGE PART END******/
 /**********************************/
 
 
