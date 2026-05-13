@@ -12,7 +12,8 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/*********** Nav Bar CSS **********/
+
+/*********** NAV BAR START **********/
 /**********************************/
 .navbar {
   border-radius: 20px;
@@ -20,6 +21,9 @@ body {
   box-shadow:0 0 5px rgba(82, 152, 243, 0.6) ;
 }
 .navbar-brand {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   color: #f1f5f9;
   font-size: 40px;
   transition: 0.3s;
@@ -34,9 +38,6 @@ body {
   height: 60px;
   border-radius: 50%;
   padding-right:10px ;
-}
-.navbar-brand:hover {
-  color: #3b82f6;
 }
 .nav-link {
   color: white;
@@ -79,8 +80,11 @@ body {
   transform: translateY(0);
   opacity: 1;
 }
+/***********NAV BAR END**********/
+/**********************************/
 
-/********* HOME PAGE PART ************/
+
+/*********HOME PAGE PART START******/
 /**********************************/
 .hero {
   min-height: 100vh;
@@ -175,14 +179,14 @@ body {
 /* Hover */
 .hero-social a:hover {
   background: #3b82f6;
-  color: #0f172a;
+  color: white;
   box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
   transform: translateY(-5px);
 }
 
 /* Home button */
 .contact-btn {
-  margin-top: 20px;
+  margin-top: 10px;
   padding: 12px 32px;
   border-radius: 50px;
   background: linear-gradient(90deg, #3b82f6, #8b5cf6);
@@ -224,8 +228,79 @@ body {
   }
 
 }
+/********* HOME PAGE PART END************/
+/**********************************/
 
-/********* FOOTER PART ************/
+
+/********* ABOUT PAGE PART START****/
+/**********************************/
+/* About Section */
+.about {
+  min-height: 100vh;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+/* Subtitle */
+.section-subtitle {
+  color: #3b82f6;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+/* Title */
+.section-title {
+  font-size: clamp(32px, 5vw, 50px);
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Text */
+.about-text {
+  color: #94a3b8;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+/* Image */
+.about-img {
+  border-radius: 20px;
+  max-width: 400px;
+  width: 100%;
+  filter: drop-shadow(0 0 25px rgba(59,130,246,0.3));
+}
+
+/* Button */
+.about-btn {
+  margin-top: 15px;
+  padding: 12px 30px;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Hover */
+.about-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(59,130,246,0.5);
+  color: #fff;
+}
+/********* ABOUT PAGE PART START****/
+/**********************************/
+
+
+/********* FOOTER PART START********/
 /**********************************/
 .footer {
   background-color: #0f172a;
@@ -280,3 +355,5 @@ body {
   color: #3b82f6;
   transform: translateY(-3px);
 }
+/********* FOOTER PART END ********/
+/**********************************/
