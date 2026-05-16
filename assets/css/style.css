@@ -301,6 +301,85 @@ body {
 /********* ABOUT PAGE PART START****/
 /**********************************/
 
+/********* SKILLS PAGE PART START****/
+/**********************************/
+.skills {
+  background: #0f172a;
+  color: #fff;
+}
+
+/* Skill Box */
+.skill-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 20px;
+  transition: 0.4s ease;
+  border: 1px solid transparent;
+}
+
+/* Hover */
+.skill-box:hover {
+  transform: translateY(-10px);
+  border-color: #3b82f6;
+  box-shadow: 0 0 25px rgba(59,130,246,0.3);
+}
+
+/* Skill info */
+.skill-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Icons */
+.skill-info i {
+  font-size: 32px;
+  color: #3b82f6;
+}
+
+/* Text */
+.skill-info span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Progress */
+.progress {
+  height: 10px;
+  background: #0f172a;
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 100%;
+  border-radius: 50px;
+  background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+}
+
+/* Widths */
+.html-bar {
+  width: 90%;
+}
+.css-bar {
+  width: 85%;
+}
+.bootstrap-bar {
+  width: 80%;
+}
+.js-bar {
+  width: 70%;
+}
+.react-bar {
+  width: 45%;
+}
+.nodejs-bar{
+  width: 40%;
+}
+/********* SKILLS PAGE PART END****/
+/**********************************/
+
 
 /********* FOOTER PART START********/
 /**********************************/
