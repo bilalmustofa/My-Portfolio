@@ -1,3 +1,33 @@
+
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "hero";
+  sections.forEach(section => {
+
+    const sectionTop = section.offsetTop - 300;
+    const sectionBottom = sectionTop + section.clientHeight;
+
+    if (scrollY >= sectionTop && scrollY < sectionBottom) {
+      current = section.getAttribute("id");
+    }
+  });
+
+  // If no section found, default to hero
+  if (!current && scrollY < 100) {
+    current = "hero";
+  }
+
+  navLinks.forEach(link => {
+    link.classList.remove("active");
+     const linkTarget = link.getAttribute("href").substring(1);
+     if (linkTarget === current) {
+      link.classList.add("active");
+    }
+  });
+});
+
 // Navbar Animation 
 window.addEventListener('load', () => {
     document.querySelector('.header').classList.add('show');
