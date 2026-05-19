@@ -5,6 +5,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     color: #797979;
     overflow-x: hidden;
