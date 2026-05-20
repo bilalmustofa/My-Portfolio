@@ -52,3 +52,12 @@ window.addEventListener('load', () => {
     document.querySelector('.hero-content').classList.add('show');
     document.querySelector('.hero-image-wrapper').classList.add('show');
   });
+
+ // Pre-loader Animation
+  window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    preloader.classList.add('fade-out');
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 1000); 
+  });
