@@ -1,21 +1,20 @@
-
+// Active Link Highlighting
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-link");
 
 window.addEventListener("scroll", () => {
-  let current = "hero";
+  let current = "";
   sections.forEach(section => {
+    const sectionTop = section.offsetTop - 200;
+    const sectionHeight = section.clientHeight;
 
-    const sectionTop = section.offsetTop - 300;
-    const sectionBottom = sectionTop + section.clientHeight;
-
-    if (scrollY >= sectionTop && scrollY < sectionBottom) {
+    if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
       current = section.getAttribute("id");
     }
   });
 
   // If no section found, default to hero
-  if (!current && scrollY < 100) {
+  if (window.scrollY < 100) {
     current = "hero";
   }
 
@@ -28,9 +27,14 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Navbar Animation 
+// Navbar and Home Page Animation
 window.addEventListener('load', () => {
-    document.querySelector('.header').classList.add('show');
+    // hide preloader
+      document.getElementById('preloader').classList.add("hide");
+      // start  animation
+      setTimeout(() => {
+        document.body.classList.add('loaded');
+      }, 1000);
   });
 
   // Letter Typing Animation
@@ -46,12 +50,6 @@ window.addEventListener('load', () => {
       backDelay: 2000
     });
   }
-
-// Home Page Animation
-  window.addEventListener('load', () => {
-    document.querySelector('.hero-content').classList.add('show');
-    document.querySelector('.hero-image-wrapper').classList.add('show');
-  });
 
  // Pre-loader Animation
   window.addEventListener('load', () => {

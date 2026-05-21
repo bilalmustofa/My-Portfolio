@@ -80,10 +80,10 @@ body {
   transition: all 2s ease;
 }
 
-/* When page loads */
-.header.show {
-  transform: translateY(0);
+/* after page load */
+body.loaded .header {
   opacity: 1;
+  transform: translateY(0);
 }
 /***********NAV BAR END**********/
 /**********************************/
@@ -132,8 +132,8 @@ body {
   transition: all 2s ease;
 }
 
-/* Active state */
-.hero-content.show {
+/* after page load */
+body.loaded .hero-content {
   opacity: 1;
   transform: translateY(0);
 }
@@ -145,8 +145,8 @@ body {
   transition: all 2s ease;
 }
 
-/* Active state */
-.hero-image-wrapper.show {
+/* after page load */
+body.loaded .hero-image-wrapper {
   opacity: 1;
   transform: translateY(0);
 }
