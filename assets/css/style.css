@@ -338,10 +338,34 @@ body.loaded .hero-image-wrapper {
   gap: 12px;
 }
 
-/* Icons */
 .skill-info i {
-  font-size: 32px;
-  color: #3b82f6;
+  font-size: 30px;
+  transition: 0.3s ease;
+}
+
+/* Icons colors */
+.fa-html5 {
+  color: #e34c26;
+}
+.fa-css3-alt {
+  color: #264de4;
+}
+.fa-bootstrap {
+  color: #563d7c;
+}
+.fa-js {
+  color: #f0db4f;
+}
+.fa-react {
+  color: #61dafb;
+}
+.fa-node-js {
+  color: #339933;
+}
+/* hover effect on icons */
+.skill-box:hover i {
+  transform: scale(1.5);
+  transition: 0.3s ease;
 }
 
 /* Text */
