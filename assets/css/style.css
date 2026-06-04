@@ -411,7 +411,7 @@ body.loaded .hero-image-wrapper {
 /********* SKILLS SECTION PART END****/
 /**********************************/
 
-/********* PROJECTS SECTION PART START ****/
+/********* PROJECTS SECTION START ****/
 /******************************************/
 
 .portfolio {
@@ -499,6 +499,57 @@ body.loaded .hero-image-wrapper {
 .github-btn {
   background: #111827;
 }
+
+/***** PROJECTS SECTION END*******/
+/******************************************/
+
+/**** SERVICES SECTION START *****/
+/**********************************/
+.services {
+  background: #0f172a;
+  color: #fff;
+} 
+/* Service Card */
+.service-card {   
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #1e293b;
+  padding: 35px 25px;
+  border-radius: 20px;
+  transition: all 0.4s ease;
+}
+/* Hover */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(59,130,246,0.2);
+}
+/* Icon */
+.service-card i {
+  font-size: 40px;
+  color: #3b82f6;
+  margin-bottom: 15px;
+  transition: 0.3s ease;
+}
+/* Hover effect on icon */
+.service-card:hover i {
+  transform: scale(1.5);
+  transition: 0.3s ease;
+}
+/* Title */
+.service-card h4 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+/* Text */
+.service-card p {
+  color: #94a3b8;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+/**** SERVICES SECTION END *****/
+/**********************************/
 
 
 /********* FOOTER PART START********/
